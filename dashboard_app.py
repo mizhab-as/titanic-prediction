@@ -980,6 +980,7 @@ def main():
                     ],
                 }
             )
+            criteria_df["Value"] = criteria_df["Value"].astype(str)
             st.dataframe(criteria_df, use_container_width=True, hide_index=True)
 
             board_cols = st.columns(2)
